@@ -30,6 +30,7 @@ class Agreement(models.Model):
         copy=False,
         help="Set if the agreement is a template. "
         "Template agreements don't require a partner.",
+        groups="agreement.group_use_agreement_template"
     )
     agreement_type_id = fields.Many2one(
         "agreement.type",

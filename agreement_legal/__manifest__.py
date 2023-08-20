@@ -1,6 +1,4 @@
 # Copyright (C) 2018 - TODAY, Pavlov Media
-# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
-
 {
     "name": "Agreements Legal",
     "summary": "Manage Agreements, LOI and Contracts",
@@ -32,12 +30,17 @@
         "views/res_partner.xml",
         "views/agreement.xml",
         "views/menu.xml",
-        "views/assets.xml",
+        # "views/assets.xml",
         "wizards/create_agreement_wizard.xml",
     ],
+    'assets':{
+        'web.assets_backend':['/agreement_legal/static/src/js/agreement.js']
+    },
     "demo": ["demo/demo.xml"],
     "qweb": ["static/src/xml/agreement.xml"],
     "application": True,
     "development_status": "Beta",
     "maintainers": ["max3903", "ygol"],
 }
+# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+

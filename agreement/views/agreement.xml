@@ -42,7 +42,6 @@
                             <field name="domain" widget="radio" />
                             <field
                                 name="is_template"
-                                groups="agreement.group_use_agreement_template"
                             />
                         </group>
                         <group name="right">
